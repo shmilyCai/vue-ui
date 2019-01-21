@@ -1,29 +1,55 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <el-container>
+      <el-aside style="width:200px;height:100%;">
+        <Nav></Nav>
+      </el-aside>
+      <el-container>
+        <el-header>
+          <Header/>
+        </el-header>
+        <el-main>
+          <Content/>
+        </el-main>
+      </el-container>
+    </el-container>
+    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>
 </template>
 
-<style lang="scss">
+<script>
+import HelloWorld from "./components/HelloWorld.vue";
+import Nav from "./section/Nav.vue";
+import Header from "./section/Header.vue";
+import Content from "./section/Content.vue";
+
+export default {
+  name: "app",
+  components: {
+    HelloWorld,
+    Nav,
+    Header,
+    Content
+  }
+};
+</script>
+
+<style>
+* {
+  padding: 0px;
+  margin: 0px;
+}
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  height: 100%;
   color: #2c3e50;
 }
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.nav {
+  width: "200px";
+  background: #2c3e50;
+  color: #ffffff;
 }
 </style>
