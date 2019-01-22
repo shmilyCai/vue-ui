@@ -1,74 +1,64 @@
 <template>
   <div class="nav">
-      <!-- <router-link to="/">Home</router-link>  -->
-      <!-- <router-link to="/about">About</router-link> -->
-       <el-menu :default-openeds="['1', '3']">
-      <el-submenu index="1">
-        <template slot="title"><i class="el-icon-message"></i>导航一</template>
-        <el-menu-item-group>
-          <template slot="title">分组一</template>
-          <el-menu-item index="1-1">选项1</el-menu-item>
-          <el-menu-item index="1-2">选项2</el-menu-item>
-        </el-menu-item-group>
-        <el-menu-item-group title="分组2">
-          <el-menu-item index="1-3">选项3</el-menu-item>
-        </el-menu-item-group>
-        <el-submenu index="1-4">
-          <template slot="title">选项4</template>
-          <el-menu-item index="1-4-1">选项4-1</el-menu-item>
-        </el-submenu>
-      </el-submenu>
+    <el-menu
+      :default-openeds="[]"
+      default-active="1"
+      class="el-menu-vertical-demo"
+    
+      route="true"
+      background-color="#545c64"
+      text-color="#fff"
+      active-text-color="#ffd04b">
+      <el-menu-item index="1">
+        <i class="el-icon-menu"></i>
+        <span slot="title">
+           <router-link to="/">Dashboar</router-link>
+        </span>
+      </el-menu-item>
       <el-submenu index="2">
-        <template slot="title"><i class="el-icon-menu"></i>导航二</template>
+        <template slot="title">
+          <i class="el-icon-message"></i>系统管理
+        </template>
         <el-menu-item-group>
-          <template slot="title">分组一</template>
-          <el-menu-item index="2-1">选项1</el-menu-item>
-          <el-menu-item index="2-2">选项2</el-menu-item>
+          <el-menu-item index="1-1">
+            <router-link to="/user">用户管理</router-link>
+          </el-menu-item>
+          <el-menu-item index="1-2">
+            <router-link to="/role">角色管理</router-link>
+          </el-menu-item>
+          <el-menu-item index="1-3">
+            <router-link to="/">Home</router-link>
+          </el-menu-item>
+          <el-menu-item index="1-4">
+            <router-link to="/about">about</router-link>
+          </el-menu-item>
         </el-menu-item-group>
-        <el-menu-item-group title="分组2">
-          <el-menu-item index="2-3">选项3</el-menu-item>
-        </el-menu-item-group>
-        <el-submenu index="2-4">
-          <template slot="title">选项4</template>
-          <el-menu-item index="2-4-1">选项4-1</el-menu-item>
-        </el-submenu>
-      </el-submenu>
-      <el-submenu index="3">
-        <template slot="title"><i class="el-icon-setting"></i>导航三</template>
-        <el-menu-item-group>
-          <template slot="title">分组一</template>
-          <el-menu-item index="3-1">选项1</el-menu-item>
-          <el-menu-item index="3-2">选项2</el-menu-item>
-        </el-menu-item-group>
-        <el-menu-item-group title="分组2">
-          <el-menu-item index="3-3">选项3</el-menu-item>
-        </el-menu-item-group>
-        <el-submenu index="3-4">
-          <template slot="title">选项4</template>
-          <el-menu-item index="3-4-1">选项4-1</el-menu-item>
-        </el-submenu>
       </el-submenu>
     </el-menu>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator'
+import { Component, Prop, Vue } from "vue-property-decorator";
 
 @Component
-export default class Nav extends Vue {
-    
-}
+export default class Nav extends Vue {}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.nav{
-  a{
+.nav {
+  a {
+    height: 100%;
     color: #ffffff;
-    &:hover{
+    text-decoration: none;
+    &:hover {
       text-decoration: none;
+      color: #ffd04b;
     }
   }
+}
+.el-menu {
+  height: calc(100% - 60px);
 }
 </style>

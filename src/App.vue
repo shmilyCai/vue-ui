@@ -1,7 +1,10 @@
 <template>
   <div id="app">
     <el-container>
-      <el-aside style="width:200px;height:100%;">
+      <el-aside style="width:200px;height:100%;background-color:#545c64;">
+        <div class="logo">
+          <img alt="logo" src="./assets/logo_cai.png" width="100%">
+        </div>
         <Nav></Nav>
       </el-aside>
       <el-container>
@@ -48,8 +51,18 @@ export default {
   color: #2c3e50;
 }
 .nav {
-  width: "200px";
-  background: #2c3e50;
+  /* width: "200px";
+  background: #2c3e50; */
   color: #ffffff;
+}
+.el-header {
+  border-bottom: solid 1px #e6e6e6;
+}
+.logo {
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  border-right: solid 1px #e6e6e6;
+  padding: 0 10px;
 }
 </style>

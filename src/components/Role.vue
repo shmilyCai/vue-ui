@@ -1,6 +1,6 @@
 <template>
-  <div class="header">
-      
+  <div>
+      Role
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 import { Component, Prop, Vue } from 'vue-property-decorator'
 
 @Component
-export default class Header extends Vue {
+export default class Role extends Vue {
     
 }
 </script>
@@ -16,7 +16,4 @@ export default class Header extends Vue {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
-.header{
-
-}
 </style>
