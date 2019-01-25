@@ -62,7 +62,6 @@ export default {
   height: 60px;
   text-align: center;
   line-height: 60px;
-  border-right: solid 1px #e6e6e6;
   padding: 0 10px;
 }
 </style>

@@ -1,29 +1,32 @@
 # vue-ui
 
-## Project setup
+由vue-cli生成的项目，vue-cli相关文档 https://cli.vuejs.org/config/
+
+包含内容：
+vue + vuex + typescript + element-ui
+
+产品安装
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+开发环境运行
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+编译打包
 ```
 npm run build
 ```
 
-### Run your tests
+运行测试，该项目为学习项目，暂无测试
 ```
 npm run test
 ```
 
-### Lints and fixes files
+Lints and fixes files
 ```
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

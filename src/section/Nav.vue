@@ -3,8 +3,7 @@
     <el-menu
       :default-openeds="[]"
       default-active="1"
-      class="el-menu-vertical-demo"
-    
+      class="text-left"
       route="true"
       background-color="#545c64"
       text-color="#fff"
@@ -12,7 +11,7 @@
       <el-menu-item index="1">
         <i class="el-icon-menu"></i>
         <span slot="title">
-           <router-link to="/">Dashboar</router-link>
+           <router-link to="/">首 页</router-link>
         </span>
       </el-menu-item>
       <el-submenu index="2">
@@ -23,7 +22,7 @@
           <el-menu-item index="1-1">
             <router-link to="/user">用户管理</router-link>
           </el-menu-item>
-          <el-menu-item index="1-2">
+          <!-- <el-menu-item index="1-2">
             <router-link to="/role">角色管理</router-link>
           </el-menu-item>
           <el-menu-item index="1-3">
@@ -31,7 +30,7 @@
           </el-menu-item>
           <el-menu-item index="1-4">
             <router-link to="/about">about</router-link>
-          </el-menu-item>
+          </el-menu-item> -->
         </el-menu-item-group>
       </el-submenu>
     </el-menu>
@@ -39,7 +38,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
+import { Component, Prop, Vue } from "vue-property-decorator"
 
 @Component
 export default class Nav extends Vue {}

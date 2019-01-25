@@ -47,7 +47,6 @@ export default class HelloWorld extends Vue {
   onClick (): void {
     window.alert(this.message)
   }
-
 }
 </script>
 
