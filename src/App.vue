@@ -25,6 +25,7 @@ import HelloWorld from "./components/HelloWorld.vue";
 import Nav from "./section/Nav.vue";
 import Header from "./section/Header.vue";
 import Content from "./section/Content.vue";
+import ShoppingCart from './components/demo/ShoppingCart.vue'
 
 export default {
   name: "app",
@@ -32,7 +33,8 @@ export default {
     HelloWorld,
     Nav,
     Header,
-    Content
+    Content,
+    ShoppingCart,
   }
 };
 </script>

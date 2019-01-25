@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '../views/Home.vue'
 import User from '../components/User.vue'
 import Role from '../components/Role.vue'
+import ShoppingCart from '../components/demo/ShoppingCart.vue'
 
 Vue.use(Router)
 
@@ -17,6 +18,11 @@ export default new Router({
       path: '/user',
       name: 'user',
       component: User
+    },
+    {
+      path: '/demo',
+      name: 'demo',
+      component: ShoppingCart
     },
     {
       path: '/role',

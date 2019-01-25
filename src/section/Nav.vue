@@ -26,7 +26,7 @@
             <router-link to="/role">角色管理</router-link>
           </el-menu-item>
           <el-menu-item index="1-3">
-            <router-link to="/">Home</router-link>
+            <router-link to="/demo">demo</router-link>
           </el-menu-item>
           <el-menu-item index="1-4">
             <router-link to="/about">about</router-link>

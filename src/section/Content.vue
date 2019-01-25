@@ -16,4 +16,8 @@ export default class Content extends Vue {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
+.content{
+  margin: 20px;
+  background: #ffffff;
+}
 </style>

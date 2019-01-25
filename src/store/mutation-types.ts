@@ -1,0 +1,11 @@
+export const ADD_TO_CART = 'ADD_TO_CART'
+export const CHECKOUT_REQUEST = 'CHECKOUT_REQUEST'
+export const CHECKOUT_SUCCESS = 'CHECKOUT_SUCCESS'
+export const CHECKOUT_FAILURE = 'CHECKOUT_FAILURE'
+export const RECEIVE_PRODUCTS = 'RECEIVE_PRODUCTS'
+
+// users
+export const RECEIVE_USERS = 'RECEIVE_USERS'
+export const DELETE_USER = 'DELETE_USERS'
+export const ADD_USER = 'ADD_USERS'
+export const UPDATE_USER = 'UPDATE_USERS'
