@@ -10,6 +10,8 @@
 6. props（向子组件传递数据）
 7. 子组件通过$emit向父组件传递消息
 8. slot插槽分发内容
+9. ref访问子组件的实例
+10. 依赖注入
 
 
 ## 指定
@@ -18,6 +20,49 @@
 3. v-show
 4. v-on:click
 5. v-model
+6. v-once，创建低开销的静态组件
+
+## 插槽
+
+所谓插槽，指父组件中的html或者数据传递到子组件中slot的位置处，
+
+1. 匿名插槽，
+    不含名字的插槽
+2. 具名插槽，
+    带有名字的插槽
+3. 作用域插槽，
+    父组件模版的所有东西都会在父级作用域内编译，子组件模版的所有东西都会在子级作用域内编译
+4. 默认的插槽内容写在slot中
+
+## 动态组件与异步组件
+
+动态组件：使用keep-alive，返回到上次的目录处（具有翻页列表的部分页面）
+
+异步组件：工厂函数和promise配合使用
+
+## 组件的钩子函数
+
+1. beforeMount
+2. created
+3. beforeMount
+4. mounted
+5. beforeUpdate
+6. update
+7. beforeDestroy
+8. destroyed
+
+## 自定义指令的钩子函数
+
+1. bind
+2. inserted
+3. update
+4. componentUpdated
+5. unbind
+
+## 过滤器
+
+与angularjs中的过滤器类似
+
 
 ## Vuex
 
